@@ -69,4 +69,4 @@ Streamlit consume los datos de MySQL en tiempo real para generar el informe inte
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
-**Desarrollado como PoC Técnica** | Repositorio: [https://github.com/areaturistica/poc-etl-dashboard-rrhh-completo](https://github.com/areaturistica/poc-etl-dashboard-rrhh-completo)
+**Desarrollado como PoC Técnica** | Repositorio: [https://github.com/mglvillar/poc-etl-dashboard-rrhh-completo](https://github.com/mglvillar/poc-etl-dashboard-rrhh-completo)
