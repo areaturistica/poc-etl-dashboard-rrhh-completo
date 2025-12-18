@@ -38,14 +38,14 @@ docker-compose up -d
 *   **MySQL Host**: `localhost:3306`
 
 ### 2. Configurar el entorno de Python
-Activa el entorno virtual e instala las dependencias:
+Activa el entorno virtual e instala las dependencias necesarias:
 
 ```bash
 # Activar entorno virtual (Windows)
 venv\Scripts\activate
 
 # Instalar dependencias
-pip install mysql-connector-python
+pip install mysql-connector-python streamlit pandas plotly sqlalchemy pymysql
 ```
 
 ### 3. Cargar los datos
@@ -55,7 +55,14 @@ Ejecuta el script de carga para importar los registros del CSV a la tabla de MyS
 python load_csv.py
 ```
 
-El script utiliza `INSERT IGNORE`, lo que permite ejecutarlo varias veces sin duplicar registros que ya tengan el mismo ID.
+### 4. Lanzar el Cuadro de Mandos (Dashboard)
+Para visualizar los datos en el sistema web simplificado:
+
+```bash
+streamlit run app.py
+```
+
+El dashboard se abrirá automáticamente en tu navegador (normalmente en [http://localhost:8501](http://localhost:8501)).
 
 ## Detalles Técnicos de la Base de Datos
 
