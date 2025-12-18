@@ -1,6 +1,7 @@
 import csv
 import mysql.connector
 from mysql.connector import Error
+import time
 
 def load_csv_to_mysql(csv_filepath, table_name):
     connection = None

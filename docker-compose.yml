@@ -1,3 +1,5 @@
+name: poc-etl-dashboard-rrhh-completo
+
 services:
   db:
     image: mysql:8.0
